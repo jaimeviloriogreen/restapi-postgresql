@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Api - PosgresSQL</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <main class="container">
+        <h1 class="container__title">Rest Api with PostgreSQL</h1>
+        <section class="model-restapi">
+            <img src="{{url_for('static', filename='img/api-rest-model.png')}}" alt="" class="model-restapi__img">
+        </section>
+
+        <section class="user-guide">
+            <h2 class="user-guide__title">HTPP Requests</h2>
+            <ul>
+                <li class="user-guide__list">
+                    <code>/products</code>: <code>['GET']</code> all products. 
+                </li>
+                <li class="user-guide__list">
+                    <code>/product/product-name</code>: <code>['GET']</code> one product by name.
+                </li>
+
+                <li class="user-guide__list">
+                    <code>/product/product-name</code>: <code>['DELETE']</code> one product by name.
+                </li>
+                <li class="user-guide__list">
+                    <code>/product</code>: <code>['POST']</code> one object type product.
+                </li>
+            </ul>
+            
+        </section>
+    </main>
+</body>
+</html>
